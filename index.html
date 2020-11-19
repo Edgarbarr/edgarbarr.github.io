@@ -4,11 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edgar Portfolio</title>
-</head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"></head>
 <body>
-    <h1>Welcome to Edgar's portfolio</h1>
-    <section>
-        <div>hi</div>
+    
+    <section class="home-banner">
+        <h1>The Edgar Store</h1>
     </section>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="#featured-products" class="nav-link">Featured Products</a>
+            </li>
+            <li>
+                <a href="#news-letter" class="nav-link">News Letter</a>
+            </li>
+            <li>
+                <a href="#footer" class="nav-link">Footer</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="featured-products" class="featured-products">
+        <div class="product">
+            <div class="img-container">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71k3fJh5EwL._AC_SL1500_.jpg" alt="">
+            </div>
+            <div class="product-info">
+                <p>Apple MacBook Air (13-inch Retina Display, 8GB RAM, 256GB SSD Storage) - Space Gray (Previous Model)</p>
+                <button>BUY NOW</button>
+            </div>
+            
+        </div>
+        <div class="product">
+            <div class="img-container">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/9138LS7dCFL._AC_SL1500_.jpg" alt="">
+            </div>
+            <div class="product-info">
+                <p>
+                    Spalding NBA Street Phantom Official Outdoor Basketball
+                    <button>BUY NOW</button>
+                </p>
+            </div>
+        </div>
+        <div class="product">
+            <div class="img-container">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81fLL0zjO6L._SL1500_.jpg" alt="">
+            </div>
+            <div class="product-info">
+                <p>
+                    AmazonFresh Colombia Ground Coffee, Medium Roast, 12 Ounce
+                </p>
+                <button>BUY NOW</button>
+            </div>
+        </div>
+    </section>
+    <section id="news-letter" class="news-letter">
+        <aside class="newsletter-image-container">
+            <img src="https://clermontseniors.com/wp-content/uploads/2020/01/newssletter.png" alt="">
+        </aside>
+        <form class="news-letter-form">
+            <h2>Join our Newsletter</h2>
+            <div class="form-group-1">
+                <label for="name">
+                    Enter your name:
+                </label>
+                <input type="text" name="name" id="name" placeholder="name here" required>
+                <label for="email">
+                    Enter your email:
+                </label>
+                <input type="email" name="email" id="email" placeholder="123@email.com"  required>
+            </div>
+            <label for="email">
+                Accept our spam
+                <input type="checkbox" name="spam" id="spam" required>
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <footer id="footer" class="footer">
+        <h1>FOOTER</h1>
+    </footer>
 </body>
 </html>
