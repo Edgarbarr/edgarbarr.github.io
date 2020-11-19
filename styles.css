@@ -11,6 +11,7 @@ li {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 button,
 input[type="submit"] {
@@ -19,6 +20,8 @@ input[type="submit"] {
   outline: none;
   padding: 7px 14px;
   font-weight: 600;
+  cursor: pointer;
+
 }
 .home-banner {
   background-color: red;
