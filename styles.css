@@ -70,7 +70,7 @@ nav > ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  box-shadow: 2px 5px 5px 1px black;
+  box-shadow: 2px 5px 5px 1px rgba(87, 87, 87, 0.507);
   z-index: 1;
 }
 .product {
@@ -170,6 +170,7 @@ input[type="text"] {
 }
 
 @media only screen and (max-width: 425px) {
+
   .home-banner > h1 {
     font-size: 40px;
   }
@@ -190,6 +191,8 @@ input[type="text"] {
     flex-direction: column;
     width: 100%;
     height: fit-content;
+    margin: 10px 0;
+
   }
   .news-letter-form {
     width: 100%;
@@ -200,5 +203,12 @@ input[type="text"] {
   }
   .featured-products {
     grid-template-columns: none;
+  }
+  .img-container  {
+    width: _webkit-fill-available;
+    height: 55%;
+  }
+  .product-info {
+    height: 45%;
   }
 }
